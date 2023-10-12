@@ -1,0 +1,3 @@
+# apache-beam[gcp]==2.48.0 #only for local development. Please refer to dockerfile for dataflow image building
+xmltodict
+jsonpath-ng

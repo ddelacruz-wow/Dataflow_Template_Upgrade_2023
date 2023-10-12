@@ -1,0 +1,24 @@
+{
+  "name": "Custom Pubsub to Bigquery streaming",
+  "description": "An Apache Beam Python SDK streaming pipeline that reads JSON encoded messages from Pub/Sub, writes the results to a BigQuery",
+  "parameters": [
+    {
+      "name": "input_subscription",
+      "label": "Pub/Sub input subscription.",
+      "helpText": "Pub/Sub subscription to read from.",
+      "isOptional": false,
+      "regexes": [
+        "^projects\\/[^\\n\\r\\/]+\\/subscriptions\\/[^\\n\\r\\/]+$"
+      ]
+    },
+    {
+      "name": "dest_table_id",
+      "label": "BigQuery output table",
+      "helpText": "BigQuery table spec to write to, in the form 'project:dataset.table'.",
+      "isOptional": false,
+      "regexes": [
+        "[^:]+:[^.]+[.].+"
+      ]
+    }
+  ]
+}
