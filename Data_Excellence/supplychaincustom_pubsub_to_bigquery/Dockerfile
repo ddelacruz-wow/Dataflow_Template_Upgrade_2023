@@ -16,6 +16,6 @@ RUN apt-get install -y libffi7 libffi-dev
 
 RUN pip install --upgrade pip
 
-RUN pip install apache-beam[gcp]==2.38.0
+RUN pip install apache-beam[gcp]==2.46.0
 
 RUN pip install -U -r ./requirements.txt
